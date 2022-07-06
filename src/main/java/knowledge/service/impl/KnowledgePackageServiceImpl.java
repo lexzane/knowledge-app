@@ -32,7 +32,7 @@ public class KnowledgePackageServiceImpl implements KnowledgePackageService {
     @Override
     public KnowledgePackage get(Long id) {
         return knowledgePackageDao.get(id).orElseThrow(() -> new RuntimeException("Couldn't get "
-                + "knowledge package set by id: " + id));
+                + "knowledge package by id: " + id));
     }
 
     @Override
